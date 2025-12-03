@@ -61,42 +61,42 @@
 #     print(f"{num} is a negative number")
 
 
-print("\nDate - December 3, 2025")
-print("\n 2.3 NESTED IF PROGRAM")
-print("\nNested if programs - when we have to check two or more conditions are true, where one if is under another if ")
-print("\nEXAMPLE 1 ")
-print(".....................")
+# print("\nDate - December 3, 2025")
+# print("\n 2.3 NESTED IF PROGRAM")
+# print("\nNested if programs - when we have to check two or more conditions are true, where one if is under another if ")
+# print("\nEXAMPLE 1 ")
+# print(".....................")
 
-a=5
-b=8
-c=3
-if a>b:
-    if a>c:
-        print("a value is big")
-    else:
-        print("c value is big")
-elif b>c:
-    print("b value is big")
-else:
-    print("c value is big")
+# a=5
+# b=8
+# c=3
+# if a>b:
+#     if a>c:
+#         print("a value is big")
+#     else:
+#         print("c value is big")
+# elif b>c:
+#     print("b value is big")
+# else:
+#     print("c value is big")
 
-print("\nEXAMPLE 1.1 ")
-print(".....................")
+# print("\nEXAMPLE 1.1 ")
+# print(".....................")
 
-a = int(input("\nEnter a number ")) # inspite of not giving : after statement under bracket, code still runs, how?
-b = int(input("Enter another number "))
-c = int(input("Enter the 3rd number "))
+# a = int(input("\nEnter a number ")) # inspite of not giving : after statement under bracket, code still runs, how?
+# b = int(input("Enter another number "))
+# c = int(input("Enter the 3rd number "))
 
-print("\n                 ")
-if a>b:
-    if a>c:
-        print(" a value is big ")
-    else:
-        print("c value is big ")
-elif b>c:
-    print("b value is big ")
-else:
-    print("c value is big ")
+# print("\n                 ")
+# if a>b:
+#     if a>c:
+#         print(" a value is big ")
+#     else:
+#         print("c value is big ")
+# elif b>c:
+#     print("b value is big ")
+# else:
+#     print("c value is big ")
 
 print("\nExample -2 ") # can use in comparative studies 
 
@@ -106,17 +106,21 @@ num3 = int(input("Enter the 3rd number: "))
 
 if num1>num2 and num2>num3:
     print(f"{num1} is the greatest number ")
-if num2>num1 and num2>num3:
+elif num2>num1 and num2>num3:
     print(f"{num2} is the greatest number ")
-if num3>num1 and num3>num2:
+elif num3>num1 and num3>num2:
     print(f"{num3} is the greatest number")
-if num1<num2 and num1<num3:
+elif num1<num2 and num1<num3:
     print(f"{num1} is the smallest number")
-if num2<num1 and num2<num3:
+elif num2<num1 and num2<num3:
     print(f"{num2} is the smallest number")
 if num3<num1 and num3<num2:
     print(f"{num3} is the greatest number")
-    
+
+
+
+
+"""
 print("\n 2.4 IF - ELIF - ELSE PROGRAM")
 print("\nThe if-elif-else statement is used to conditionally execute a statement or a block of statemnets.")
 print("\nExample 1")
@@ -173,3 +177,10 @@ else:
     
 
 
+"""
+
+
+
+age = 18
+
+print(id(age))

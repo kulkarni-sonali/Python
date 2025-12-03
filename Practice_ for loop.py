@@ -115,6 +115,10 @@ else:
     print("The string is not palindrome.") 
 
 
+
+
+
+
 print("Write a program to find the result of base ^pow.")
 
 base = int(input("Enter Base: "))
@@ -126,8 +130,8 @@ if pow == 0:
     print(f"{base} raised to the power {pow} is {result}")
 else:
     while i<=pow:
-        result *= base
-        i += 1
+        result *= base   # result = result * base
+        i += 1   # i = i + 1
 
 print(f"{base} raised to the power {pow} is {result}")
 
