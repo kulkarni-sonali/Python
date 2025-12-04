@@ -104,20 +104,24 @@ num1 = int(input("\nEnter the 1st number: "))
 num2 = int(input("Enter the 2nd number: "))
 num3 = int(input("Enter the 3rd number: "))
 
-if num1>num2 and num2>num3:
-    print(f"{num1} is the greatest number ")
-elif num2>num1 and num2>num3:
-    print(f"{num2} is the greatest number ")
-elif num3>num1 and num3>num2:
-    print(f"{num3} is the greatest number")
-elif num1<num2 and num1<num3:
-    print(f"{num1} is the smallest number")
-elif num2<num1 and num2<num3:
-    print(f"{num2} is the smallest number")
-if num3<num1 and num3<num2:
-    print(f"{num3} is the greatest number")
-
-
+if num1>=0 and num2>=0 and num3>=0:
+    if num1!=num2 and num1!=num3 and num2!=num3:
+        if num1>num2 and num2>num3:
+            print(f"{num1} is the greatest number ")
+        if num2>num1 and num2>num3:
+            print(f"{num2} is the greatest number ")
+        if num3>num1 and num3>num2:
+            print(f"{num3} is the greatest number")
+        if num1<num2 and num1<num3:
+            print(f"{num1} is the smallest number")
+        if num2<num1 and num2<num3:
+            print(f"{num2} is the smallest number")
+        if num3<num1 and num3<num2:
+            print(f"{num3} is the greatest number")
+    else:
+        print("Duplicate Values Entered")
+else:
+    print("you have entered negative number ")
 
 
 """
