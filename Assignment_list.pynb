@@ -1,0 +1,8 @@
+# Sum and Multiplication
+num=[11,21,31,41,51]
+Total=sum(num)
+print(Total)
+
+numbers = [10, 20, 30, 40, 50]
+total_sum = sum(numbers)
+
