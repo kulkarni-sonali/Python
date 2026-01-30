@@ -1,0 +1,42 @@
+30 Jan 2026
+
+list → ordered, mutable
+
+tuple → ordered, immutable
+
+set - not ordered , mutable
+
+Why can’t we create (put) a list inside a set?”
+
+Short answer
+
+In Python, you cannot put a list inside a set because sets require their elements to be hashable (immutable), while lists are mutable (changeable). A set uses a hash table for fast lookups, and if an item's content changes, its hash value changes, breaking the set's structure. 
+Sets require: Immutable/Hashable items (e.g., tuples, strings, numbers).
+Lists are: Mutable/Unhashable (cannot be hashed).
+
+merging, concatenation doesn't work in sets
+
+
+QUESTIONS-
+
+s={12,15,13,23,22,16,17}
+#t={10,11,21}# if numbers are same as in s then it will not repeat in output
+u-{12,23,16}
+#print(s.union(t))
+#print(s.intersection(t))    
+#print(s.difference(t)) # will give output by removing values of t from s
+#print(s.symmetric_difference(t)) #output will be in serial order i.e. ascending order
+#s.update(t)
+#print(s.issuperset(t))
+#print(s.issubset(t))
+#print(s.isdisjoint(t))
+#print(s.union(u))
+#print(s.difference(u))
+print(s.issuperset(u))
+print(s.issubset(u))
+print(s.isdisjoint(u))
+
+OUTPUT OF LAST 3 PRINTS  (HOW?)
+False
+True
+False
